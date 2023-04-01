@@ -13,13 +13,13 @@
         <!-- Início do header -->
         <div id="header">
             <header>
-                <a href=""><img src="./img/LOGO.png" alt=""></a>
+                <a href="index.html"><img src="./img/LOGO.png" alt=""></a>
                 <div id="buttons">
-                    <button>Criar Conta</button>
-                    <button>Entrar</button>
+                    <button id="criar">Criar Conta</button>
+                    <button id="entrar">Entrar</button>
                 </div>
             </header>
-            <div>
+            <div id="slogan">
                 <h2>Todas as opções para você</h2>
                 <p>Uma plataforma dedicada a sua mobilidade, para que você se sinta seguro e confortável ao andar nas ruas da sua cidade.</p>
             </div>
@@ -64,6 +64,33 @@
             <p>Todos os direitos reservados</p>
             <p>By Epilogi&copy;</p>
         </footer>
+
     </div>
+    <div id="backgroundLogin">
+        <div id="modalLogin">
+            <img src="./img/LOGO2.png" alt="">
+            <form action="" style="display:flex; flex-direction:column;">
+                <input id="entrarEmail" onclick="mudarCor(this.id)" type="email" placeholder="Enter your e-mail">
+                <input id="entrarSenha" onclick="mudarCor(this.id)" type="password" placeholder="Password">
+                <button id="btnEntrar">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="backgroundCadastrar">
+        <div id="modalCadastrar">
+            <img src="./img/LOGO2.png" alt="">
+            <form action="" style="display:flex; flex-direction:column;">
+                <a href="https://accounts.google.com/v3/signin/confirmidentifier?dsh=S1880040322%3A1680371395292800&hl=pt-BR&ifkv=AQMjQ7RxXePIySKDQISSagDF8Uz-54fKhq4IHtAuXz7ZUB_z8jxGdvmSRGOdUfd8znXmxABjLMJe8Q&flowName=GlifWebSignIn&flowEntry=ServiceLogin" id="entrarGoogle">Entrar com o Google</a>
+                <input id="name" type="text" onclick="mudarCor(this.id)" name="" placeholder="User Name">
+                <input id="cadastrarEmail" onclick="mudarCor(this.id)" type="email" placeholder="Enter your e-mail">
+                <input id="cadastrarSenha" onclick="mudarCor(this.id)" type="password" placeholder="Password">
+                <button id="btnCadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
 </body>
 </html>

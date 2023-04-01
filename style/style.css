@@ -1,4 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+
+/* Design do header  */
+#header{
+    background-image: url("../img/headerBackground.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;background: #5EA4CE;
+    color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 115px  30px 115px;
+    background: rgba(204, 214, 240, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+#buttons{
+    display: flex;
+    gap: 30px;
+}
+header button{
+    width: 195px;
+    height: 56px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+#criar{
+    background: #5EA4CE;
+    color: #FFFFFF;
+}
+#entrar{
+    color: #464646;
+}
+#slogan{
+    width: 394px;
+    height: 316px;
+    background: rgba(146, 160, 169, 0.6);
+    box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.25);
+    border-radius: 10px;
+    padding: 64px 70px 0px 70px;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px auto 45px;
+    gap: 10px;
+}
+#slogan h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #4FFFD5;
+}
+#slogan p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+/* Modal do login Design */
+#modalLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 830px;
+    height: 580px;
+    border-radius: 15px;
+    background: #fff;
+}
+#modalLogin img, #modalCadastrar img{
+    width: 220px;
+    height: 71px;
+    margin-top: 50px;
+}
+
+/* Input geral */
+#modalLogin input, #modalCadastrar input{
+    width: 550px;
+    height: 40px;
+    margin-top: 70px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 5px 5px 5px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 30px;
+}
+#modalLogin input::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 30px;
+    color: #838383;
+}
+#entrarEmail, #cadastrarEmail{
+    background: url("../icons/emailIcon.png");
+    background-repeat: no-repeat;
+    background-position:  5px 10px;
+    background-size: 30px;
+}
+#entrarSenha, #cadastrarSenha{
+    background: url("../icons/senha.png");
+    background-repeat: no-repeat;
+    background-position:  5px 10px;
+}
+
+/* button geral */
+#modalLogin button, #btnCadastrar{
+    margin-top: 45px;
+    height: 54px;
+    width: 276px;
+    align-self: center;
+    background: #2FCAA5;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#backgroundLogin, #backgroundCadastrar{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    background: rgba(87, 87, 87, 0.5);
+    position: fixed;
+}
+
+/* Modal criar Design */
+#modalCadastrar{
+    width: 983px;
+    height: 730px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#entrarGoogle{
+    border: none;
+    background: #fff;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    padding: 15px 0px 15px 0px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #838383;
+    text-decoration: none;
+    margin-top: 50px;
+    background: url("../icons/google.png");
+    background-repeat: no-repeat;
+    background-position: 100px 0px;
+}
+
+#name{
+    background: url("../icons/nameUser.png");
+    background-repeat: no-repeat;
+    background-position:  5px 10px;
 }
