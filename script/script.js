@@ -70,7 +70,6 @@ document.getElementById("btnEntrar").addEventListener("click", (e) =>{
 
 
 // Mudando a cor da linha para preto caso clique no input
-
 function mudarCor(id){
     document.getElementById(`${id}`).style.borderColor = "#000"
 }
