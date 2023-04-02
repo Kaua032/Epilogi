@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -22,10 +23,13 @@ header{
     position: fixed;
     display: flex;
     justify-content: space-around;
+    gap: 85rem;
+    align-items: center;
 }
 header img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 header input{
     border: none;
@@ -33,4 +37,197 @@ header input{
     border-radius: 15px;
     width: 364px;
     height: 50px;
+    padding-left: 10px;
+}
+
+
+
+#informationsUser{
+    padding: 10px 0px 10px 0px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    position: fixed;
+    height: 100vh;
+    width: 340px;
+    background: #FFFFFF;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#voltar{
+    background: url("../icons/voltarIcon.png");
+    background-color: #24648E;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+}
+#imageUser{
+    background: #A7DDF2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#nameUser{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+#favoritos{
+    background: #288FCF;
+    border-radius: 100px;
+    width: 280px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 45px;
+}
+#favoritos img{
+    width: 19px;
+    height: 19px;
+}
+#expand{
+    margin-left: auto;
+}
+#favoritos p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 7px;
+}
+
+footer{
+    background: #24648E;
+    height: 103px;
+    width: 100%;
+    margin-top: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width: 75px;
+    height: 25px;
+}
+
+#carrossel{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 75%;
+    overflow: auto;
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed;
+    justify-content: center;
+    gap: 65px;
+}
+.card{
+    display: flex;
+    background: #FBFBFB;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    width: 252px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardPart1{
+    display: flex;
+    gap: 20px;
+}
+.cardPart1Second{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cardPart1 img{
+    width: 45px;
+    height: 45px;
+}
+.titleCard{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.stars{
+    display: flex;
+}
+.stars img{
+    width: 15px;
+    height: 15px;
+}
+.stars p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+}
+.cardPart2{
+    display: flex;
+    gap: 70px;
+}
+.route{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #0084AD;
+    background-color: #FBFBFB;
+    background: url("../icons/Route.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.favorite{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #FBBC04;
+    background-color: #FBBC04;
+    background-image: url("../icons/starWhite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-radius: 50px;
 }
