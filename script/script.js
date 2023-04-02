@@ -1,6 +1,9 @@
 let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 let passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/
 
+//Array com os usuários
+let users = []
+
 // Inputs Cadastrar
 let emailInputCadastro = document.getElementById("cadastrarEmail")
 let senhaInputCadastro = document.getElementById("cadastrarSenha")
@@ -9,6 +12,7 @@ let senhaInputCadastro = document.getElementById("cadastrarSenha")
 let emailInputLogin = document.getElementById("entrarEmail")
 let senhaInputLogin = document.getElementById("entrarSenha")
 
+// Backgrounds dos modals
 let modalLogin = document.getElementById("backgroundLogin")
 let modalCriar = document.getElementById("backgroundCadastrar")
 
@@ -50,6 +54,9 @@ document.getElementById("btnCadastrar").addEventListener("click", (e) =>{
     else if(emailRegex.test(emailInputCadastro.value) == false & passwordRegex.test(senhaInputCadastro.value) == true){
         emailInputCadastro.style.borderColor = "red"
     }
+    else{
+        window.location.href = "./pages/mapa.html"
+    }
 })
 
 // Analisando os dados do Entrar
@@ -65,6 +72,9 @@ document.getElementById("btnEntrar").addEventListener("click", (e) =>{
 
     else if(emailRegex.test(emailInputLogin.value) == false & passwordRegex.test(senhaInputLogin.value) == true){
         emailInputLogin.style.borderColor = "red"
+    }
+    else{
+        window.location.href = "./pages/mapa.html"
     }
 })
 
