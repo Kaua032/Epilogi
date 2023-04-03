@@ -1,10 +1,6 @@
 let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 let passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/
 
-//Array com os usuários
-let users = []
-let i = 0
-
 // Inputs Cadastrar
 let emailInputCadastro = document.getElementById("cadastrarEmail")
 let senhaInputCadastro = document.getElementById("cadastrarSenha")
